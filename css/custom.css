@@ -1,0 +1,39 @@
+body, p {
+  font-size: 16px;
+}
+
+.projectlead span {
+  font-size: 14px;
+  padding: 3px 10px;
+  font-weight: bold;
+  background-color: #D7EDE4;
+  border: 1px solid #c7d9d0;
+  color: #8d9993;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+ul.bulleted {
+  text-align: left;
+  display: inline-block;
+  margin: 0;
+}
+
+p + .bulleted {
+  margin-top: -10px;
+}
+
+.bulleted li {
+  list-style-type: square;
+  list-style-position: inside;
+  margin: 0 0 10px 0;
+}
+
+h1 + .sub {
+  margin-top: -20px;
+}
+
+.text-block {
+  display: inline-block;
+  text-align: left;
+}

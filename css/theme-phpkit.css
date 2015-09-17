@@ -2685,8 +2685,8 @@ iframe.mail-list-form {
   display: none !important;
 }
 footer {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 footer.social h1 {
   margin-bottom: 24px;
@@ -4375,7 +4375,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#485260', end
   border-bottom: 1px dotted #cccccc;
   float: left;
   width:100%;
-  padding: 7px; 
+  padding: 7px;
 }
 
 .superlist .name{
