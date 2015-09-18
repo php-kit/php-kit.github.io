@@ -39,23 +39,18 @@
     </div>
 
     <div class="main-container">
-      <header class="fullscreen-element no-pad centered-text">
-        <div class="background-image-holder parallax-background overlay" id="ninjabg">
-          <!--img class="background-image" alt="Background Image" src="img/hero8.jpg"-->
+      <header class="fullscreen-element-disabled no-pad-disabled centered-text">
+        <div class="background-image-holder parallax-background overlay-disabled" id="ninjabg">
+          <img class="background-image"
+               alt="Background Image"
+               src="img/code-wallpaper-2.jpg">
         </div>
 
         <div class="container align-vertical">
           <div class="row">
             <div class="col-md-12 text-center">
               <img src="img/phpkitlogo.png" width="320" style="padding:15px 30px 1px 30px">
-              <h2 class="text-white">
-                The developer's toolkit<!--The toolbox every PHP<br>developer should have!-->
-                <!--Makes PHP development <b>easier</b>,<br><b>faster</b> and more <b>enjoyable</b>!-->
-              </h2>
-              <!--<p class="lead" style="font-size:18px;margin-top:20px">--><!--Comprised of packages that are:-->
-              <!--<ul class="splash-topics">--><!--<li>✓ &nbsp; damn useful-->
-              <!--<li>✓ &nbsp; usable on any PHP project--><!--<li>✓ &nbsp; framework independent-->
-              <!--<li>✓ &nbsp; continually evolving and expanding--><!--</ul>-->
+              <h2 class="text-white">The developer's toolkit </h2>
             </div>
           </div>
         </div>
@@ -66,46 +61,29 @@
           <div class="row">
             <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
               <h1 class="text-center">What is PHP-Kit ?</h1>
-              <!--<span class="sub alt-font">Makes your work easier</span>-->
               <div class="intro">
-                <p>PHP-Kit is a set of high quality packages that can be used on any PHP project, irrespective of the
-                   framework being used.
-                <p>Broad in scope, it aims to provide the developer with a set of general purpose libraries that can be
+                <p>PHP-Kit is a set of high quality <a href="http://getcomposer.org">Composer</a> packages that can be
+                   used on any PHP project.
+                <p>It aims to provide the developer with a set of general/multi purpose libraries and tools that can be
                    easily reused between projects.
-                <p>The libraries are packaged as <a href="http://getcomposer.org">Composer</a> packages that can be
-                   easily installed into your projects.
-                <p>We wanted to share these packages with the world (because we believe they can be very useful to any
-                   PHP developer) so we grouped them under the same unbrella project, the <b>PHP-Kit</b>.
               </div>
             </div>
           </div>
-
-          <!--<br> <br>--><!--<h1 class="text-center">PHP-Kit is the solution</h1><br>-->
-
-          <!--<div class="row">--><!--<div class="col-md-3 col-sm-6">--><!--<div class="feature feature-icon-large">-->
-          <!--<i class="icon icon-documents"></i>--><!--<h5>Usable on any PHP project</h5>--><!--<p>-->
-          <!--A consistent set of tools at your disposal, ready for use, on any project.<br>-->
-          <!--All developers on a team/project can use the same utility functions and APIs.--><!--</p>--><!--</div>-->
-          <!--</div>-->
-
-          <!--<div class="col-md-3 col-sm-6">--><!--<div class="feature feature-icon-large">-->
-          <!--<i class="icon icon-strategy"></i>--><!--<h5>Framework independant</h5>--><!--<p>-->
-          <!--Work with any framework, always using the same set of base functions and APIs.<br>-->
-          <!--Make your code easier to reuse.<br>-->
-          <!--Make it easier to switch to projects made with other frameworks, keeping the <em>way-you-work</em>.-->
-          <!--</p>--><!--</div>--><!--</div>-->
-
-          <!--<div class="col-md-3 col-sm-6">--><!--<div class="feature feature-icon-large">-->
-          <!--<i class="icon icon-notebook"></i>--><!--<h5>Good documentation</h5>--><!--<p>-->
-          <!--Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime-->
-          <!--placeat facere possimus. </p>--><!--</div>--><!--</div>-->
-
-          <!--<div class="col-md-3 col-sm-6">--><!--<div class="feature feature-icon-large">-->
-          <!--<i class="icon icon-tools"></i>--><!--<h5>An evolving and expanding set</h5>--><!--<p>-->
-          <!--Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime-->
-          <!--placeat facere possimus. </p>--><!--</div>--><!--</div>-->
-
-          <!--</div>-->
+          <br><br>
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <h3>PHP-Kit is not a framework</h3>
+              <br>
+              <div class="intro">
+                Some of PHP-Kit's packages began life as a part of the <a href="http://selenia.io" target="_blank">Selenia</a>
+                framework,<br> but as they do not depend on it, they were moved here to allow any developer to:
+              </div>
+              <ul class="bulleted" style="margin-top:8px">
+                <li>use them on any kind of PHP project,
+                <li>using any framework, or no framework at all.
+              </ul>
+            </div>
+          </div>
 
         </div>
       </section>
@@ -181,7 +159,7 @@
               </div>
             </li>
           </ul>
-
+          <br><br>&nbsp;
         </div>
 
       </section>
@@ -192,14 +170,28 @@
             <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 text-center">
               <h1><strong>CONTRIBUTIONS ARE WELCOME</strong></h1>
               <div class="sub alt-font">PHP-Kit is a good place to promote your work</div>
-              <br><br>
-              <div class="text-block">
+              <div class="text-block spaced">
                 <p class="lead">
                   Do you have an amazing package you want to submit?<br> Send-us an <a href="mailto:os@impactwave.com">email</a>
-                  with a link to your repository page and a explanation of:
+                  with a link to your repository page.
+              </div>
+              <br>
+              <hr>
+              <br>
+              <h3>Criteria for package acceptance</h3><br> <br>
+              <div class="text-block">
+                <h6>To be included in PHP-Kit, a package:</h6>
                 <ul class="bulleted">
-                  <li>why your package fits our philosophy,
-                  <li>why is it of general interest to the majority of PHP developers.
+                  <li>Must be framework agnostic;
+                  <li>Should not depend on packages external to PHP-Kit;
+                  <li>Must conform to PSR-4 for autoloading;
+                  <li>Must not require a PHP version < 5.4;
+                  <li>Adhere to <a href="http://semver.org" target="_blank">semantic versioning</a>.<br>Do not introduce
+                      backwards compatibility breaks.
+                  <li>Should be well documented;
+                  <li>Should be well tested;
+                  <li>Should be well maintained;
+                  <li>Must be licensed under the MIT, BSD or Apache licenses.
                 </ul>
               </div>
             </div>
@@ -207,6 +199,7 @@
 
         </div>
       </section>
+
     </div>
 
     <div class="footer-container">
@@ -214,9 +207,9 @@
       <footer class="short bg-secondary-1">
         <div class="container">
           <div class="row">
-            <div class="col-sm-12 text-center">
-              <span class="sub">© Copright 2015 Impactwave Lda</span>
-              <!--<ul>--><!--<li><a href="#">Terms Of Use</a></li>-->
+            <div class="col-sm-12 text-center muted">
+              <!--<span class="sub">-->Copyright © 2015 Impactwave Lda<!--</span>--><!--<ul>-->
+              <!--<li><a href="#">Terms Of Use</a></li>-->
               <!--<li><a href="#">Privacy &amp; Security Statement</a></li>--><!--<li><a href="#">Sitemap</a></li>-->
               <!--</ul>-->
             </div>

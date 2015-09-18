@@ -4347,23 +4347,23 @@ footer.short-2 .contact-action:hover {
 
 /* Ninja tricks */
 
-#ninjabg{
-  /*background: #242830!important;*/
+/*#ninjabg{*/
+  /*/!*background: #242830!important;*!/*/
 
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#485260+0,242830+50,242830+50 */
-background: #242830!important; /* Old browsers */
-background: -moz-radial-gradient(center, ellipse cover,  #485260 0%, #242830 50%, #242830 50%)!important; /* FF3.6+ */
-background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#485260), color-stop(50%,#242830), color-stop(50%,#242830))!important; /* Chrome,Safari4+ */
-background: -webkit-radial-gradient(center, ellipse cover,  #485260 0%,#242830 50%,#242830 50%)!important; /* Chrome10+,Safari5.1+ */
-background: -o-radial-gradient(center, ellipse cover,  #485260 0%,#242830 50%,#242830 50%)!important; /* Opera 12+ */
-background: -ms-radial-gradient(center, ellipse cover,  #485260 0%,#242830 50%,#242830 50%)!important; /* IE10+ */
-background: radial-gradient(ellipse at center,  #485260 0%,#242830 50%,#242830 50%)!important; /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#485260', endColorstr='#242830',GradientType=1 )!important; /* IE6-9 fallback on horizontal gradient */
-}
+  /*/!* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#485260+0,242830+50,242830+50 *!/*/
+/*background: #242830!important; /!* Old browsers *!/*/
+/*background: -moz-radial-gradient(center, ellipse cover,  #485260 0%, #242830 50%, #242830 50%)!important; /!* FF3.6+ *!/*/
+/*background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#485260), color-stop(50%,#242830), color-stop(50%,#242830))!important; /!* Chrome,Safari4+ *!/*/
+/*background: -webkit-radial-gradient(center, ellipse cover,  #485260 0%,#242830 50%,#242830 50%)!important; /!* Chrome10+,Safari5.1+ *!/*/
+/*background: -o-radial-gradient(center, ellipse cover,  #485260 0%,#242830 50%,#242830 50%)!important; /!* Opera 12+ *!/*/
+/*background: -ms-radial-gradient(center, ellipse cover,  #485260 0%,#242830 50%,#242830 50%)!important; /!* IE10+ *!/*/
+/*background: radial-gradient(ellipse at center,  #485260 0%,#242830 50%,#242830 50%)!important; /!* W3C *!/*/
+/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#485260', endColorstr='#242830',GradientType=1 )!important; /!* IE6-9 fallback on horizontal gradient *!/*/
+/*}*/
 
-.bg-secondary-1{
-  *background: #242830!important;
-}
+/*.bg-secondary-1{*/
+  /**background: #242830!important;*/
+/*}*/
 
 
 
