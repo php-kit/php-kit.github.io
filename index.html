@@ -277,8 +277,7 @@
               if (!--dup) {
                 dup      = 2;
                 if (isLink)
-                  window.history.pushState (null, null, target);
-//                  location.hash = target;
+                  window.history.pushState (null, null, target == '#home' ? '.' : target);
                 $ ('title').text ((target != '#home' ? target[1].toUpperCase () + target.substr (2) + ' - ' : '') +
                   'PHP-Kit');
                 savedPos = window.pageYOffset;
