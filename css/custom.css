@@ -10,6 +10,19 @@ a:hover {
   color: rgb(66, 139, 202);
 }
 
+nav {
+  background: #1d2933 !important;
+  margin-bottom: 0 !important;
+  border-radius: 0 !important;
+  border: none !important;
+}
+
+nav a {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
 .projectlead span {
   font-size: 14px;
   padding: 3px 10px;
