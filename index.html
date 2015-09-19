@@ -26,7 +26,7 @@
     <link href="css/font-lato.css" rel="stylesheet" type="text/css">
   </head>
 
-  <body>
+  <body id="home" data-spy="scroll" data-target=".nav-container" data-offset="51">
     <div class="loader">
       <div class="spinner">
         <div class="double-bounce1"></div>
@@ -35,11 +35,12 @@
     </div>
 
     <!--<div class="nav-container">--><!--</div>-->
-    <nav class="navbar navbar-inverse">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="row">
-          <div class="col-sm-12 text-center">
+          <div class="col-sm-12 text-center nav-container">
             <ul class="nav navbar-nav">
+              <li><a href="#home">Home</a></li>
               <li><a href="#about">About</a></li>
               <li><a href="#packages">Packages</a></li>
               <li><a href="#history">History</a></li>
@@ -236,19 +237,115 @@
       </footer>
     </div>
 
-    <script src="https://www.youtube.com/iframe_api"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.plugin.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.flexslider-min.js"></script>
-    <script src="js/smooth-scroll.min.js"></script>
+    <!--<script src="js/smooth-scroll.min.js"></script>-->
     <script src="js/skrollr.min.js"></script>
-    <script src="js/spectragram.min.js"></script>
-    <script src="js/scrollReveal.min.js"></script>
-    <script src="js/isotope.min.js"></script>
-    <script src="js/twitterFetcher_v10_min.js"></script>
-    <script src="js/lightbox.min.js"></script>
-    <script src="js/jquery.countdown.min.js"></script>
-    <script src="js/scripts.js"></script>
+    <!--<script src="js/scrollReveal.min.js"></script>--><!--<script src="js/isotope.min.js"></script>-->
+    <!--<script src="js/lightbox.min.js"></script>--><!--<script src="js/scripts.js"></script>-->
+
+    <script>
+      var isFirefox = typeof InstallTrigger !== 'undefined';
+      var isIE = /*@cc_on!@*/ false || !!document.documentMode;
+      var isChrome = !!window.chrome;
+      var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0;
+
+      $ ('.loader').css ('opacity', 0);
+      setTimeout (function () {
+        $ ('.loader').hide ();
+        setupScroll ();
+      }, 600);
+
+      function setupScroll () {
+        var navOffset = $ ('nav').height ()
+          , savedPos = window.pageYOffset - navOffset;
+
+        function anim (event) {
+          var dup       = 2
+            , isLink    = Boolean (this.hash)
+            , target    = (isLink ? this.hash : location.hash) || '#home'
+            , newY      = $ (target).offset ().top - navOffset;
+
+          if (isLink) event.preventDefault ();
+
+          return $ ('html, body').animate (
+            {
+              scrollTop: newY
+            }, 300, function () {
+              if (!--dup) {
+                dup      = 2;
+                if (isLink)
+                  window.history.pushState (null, null, target);
+//                  location.hash = target;
+                $ ('title').text ((target != '#home' ? target[1].toUpperCase () + target.substr (2) + ' - ' : '') +
+                  'PHP-Kit');
+                savedPos = window.pageYOffset;
+              }
+            });
+        }
+
+        $ (".nav li a[href^='#']").on ('click', anim);
+
+        $ (window).on (isChrome || isSafari ? 'hashchange' : 'popstate', function (ev) {
+          window.scrollTo (0, savedPos);
+          anim (ev);
+        });
+
+        anim ();
+      }
+
+      /************** Parallax Scripts **************/
+
+      var isFirefox = typeof InstallTrigger !== 'undefined';
+      var isIE = /*@cc_on!@*/ false || !!document.documentMode;
+      var isChrome = !!window.chrome;
+      var isSafari = Object.prototype.toString.call (window.HTMLElement).indexOf ('Constructor') > 0;
+      var prefix;
+
+      if (isFirefox) {
+        prefix = '-moz-';
+      } else if (isIE) {
+
+      } else if (isChrome || isSafari) {
+        prefix = '-webkit-';
+      }
+      $ ('.parallax-background').each (function () {
+
+        if ($ (this).closest ('section').hasClass ('first-child') &&
+          !$ (this).closest ('section').hasClass ('slider-fullscreen')) {
+          $ (this).attr ('data-top', prefix + 'transform: translate3d(0px,0px, 0px)');
+          $ (this).attr ('data-top-bottom', prefix + 'transform: translate3d(0px,200px, 0px)');
+
+        } else {
+
+          $ (this).attr ('data-bottom-top', prefix + 'transform: translate3d(0px,-100px, 0px)');
+          $ (this).attr ('data-center', prefix + 'transform: translate3d(0px,0px, 0px)');
+          $ (this).attr ('data-top-bottom', prefix + 'transform: translate3d(0px,100px, 0px)');
+
+        }
+
+      });
+      if (!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test (navigator.userAgent || navigator.vendor ||
+          window.opera)) {
+        skrollr.init ({
+          forceHeight: false
+        });
+
+        // Multi Layer Parallax
+
+        $ ('.hover-background').each (function () {
+          $ (this).mousemove (function (event) {
+            $ (this).find ('.background-image-holder').css ('transform',
+              'translate(' + -event.pageX / 30 + 'px,' + -event.pageY / 45 + 'px)');
+            $ (this).find ('.layer-1').css ('transform',
+              'translate(' + -event.pageX / 50 + 'px,' + -event.pageY / 50 + 'px)');
+            $ (this).find ('.layer-2').css ('transform',
+              'translate(' + -event.pageX / 60 + 'px,' + -event.pageY / 60 + 'px)');
+          });
+        });
+      }
+    </script>
   </body>
 </html>
