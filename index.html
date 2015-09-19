@@ -39,63 +39,60 @@
     </div>
 
     <div class="main-container">
-      <header class="fullscreen-element-disabled no-pad-disabled centered-text">
-        <div class="background-image-holder parallax-background overlay-disabled" id="ninjabg">
+      <header class="fullscreen-element-disabled no-pad-disabled centered-text alt0">
+        <div class="background-image-holder parallax-background overlay-disabled" style="opacity:0.2">
           <img class="background-image" alt="Background Image" src="img/code-wallpaper-2.jpg">
         </div>
 
-        <div class="container align-vertical">
+        <div class="container align-vertical-disabled">
           <div class="row">
             <div class="col-md-12 text-center">
-              <img src="img/phpkitlogo.png" width="320" style="padding:15px 30px 1px 30px">
+              <img src="img/phpkitlogo.png" style="width:320px;padding:15px 30px 1px 30px">
               <h2 class="text-white">The developer's toolkit </h2>
             </div>
           </div>
         </div>
       </header>
 
-      <section class="pure-text-centered">
+      <section class="bk-1">
         <div class="container">
           <div class="row">
             <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
               <h1 class="text-center">What is PHP-Kit ?</h1>
               <div class="intro">
                 <p>PHP-Kit is a set of standalone <a href="http://getcomposer.org" target="_blank">Composer</a> packages
-                   that work well together and can be used on any PHP project.
+                   that work well together and can be used independently on any PHP project.
                 <p>It aims to provide the developer with a set of general/multi purpose libraries and tools that can be
                    easily reused between projects.
+                <p>This is not a framework! That's why we call it a toolkit. You can pick just the tools you need to get
+                   the job done. </p><br>
+                <h5>PHP-Kit's packages:</h5>
+                <ul class="bulleted">
+                  <li>are framework agnostic;
+                  <li>do not depend on packages external to PHP-Kit;
+                  <li>conform to PSR-4 for autoloading;
+                  <li>are compatible witg PHP versions >= 5.4;
+                  <li>adhere to <a href="http://semver.org" target="_blank">semantic versioning</a> and do not introduce
+                      backwards compatibility breaks;
+                  <li>are well documented <i>(work in progress)</i>;
+                  <li>are battle tested in real world projects <i>(sorry, not automated tests yet)</i>;
+                  <li>are actively maintained;
+                  <li>are licensed under a MIT or BSD license.
+                </ul>
               </div>
             </div>
           </div>
-          <br><br>
-          <div class="row">
-            <div class="col-md-12 text-center">
-              <h3>PHP-Kit is not a framework</h3><br>
-              <div class="intro">
-                Some of PHP-Kit's packages began life as part of the <a href="http://selenia.io"
-                                                                        target="_blank">Selenia</a> framework.<br>Later
-                on, as they were completely independent from it , we decided to move them here, <br>thereby allowing any
-                developer to:
-              </div>
-              <ul class="bulleted" style="margin-top:8px">
-                <li>use them on any kind of PHP project,
-                <li>use them with/without any framework.
-              </ul>
-            </div>
-          </div>
-
         </div>
       </section>
 
-      <section class="duplicatable-content">
+      <section>
 
         <div class="container">
           <div class="row">
             <div class="col-md-12 text-center">
-              <h1>TOOLKIT PACKAGES</h1>
+              <h1>PHP-Kit's packages</h1>
             </div>
           </div>
-
           <ul class="superlist">
             <li>
               <div class="name ztitle">Name</div>
@@ -163,40 +160,47 @@
 
       </section>
 
-      <section class="pure-text-centered">
+      <section class="centered-text alt alt0">
+        <div class="container align-vertical">
+          <div class="row">
+            <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+              <h1 class="text-center">PHP-Kit's history</h1>
+              <div class="intro">
+                Some of PHP-Kit's packages began life as part of the <a href="http://selenia.io"
+                                                                        target="_blank">Selenia</a> framework.<br> All
+                packages that were not framework-dependant were later moved into a separate project, in order to make
+                them reusable outside of a framework context. <br>That's how PHP-Kit was born.<br>Now, it's goal is to
+                provide a home to independent packages that are useful, not only to the <a href="http://selenia.io"
+                                                                                           target="_blank">Selenia</a>
+                framework ecosystem, but also to every PHP developer, on any project, irrespective of the chosen
+                framework (if any).
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bk-1">
         <div class="container">
           <div class="row">
             <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 text-center">
-              <h1>CONTRIBUTIONS ARE WELCOME</h1>
-              <div class="sub alt-font">PHP-Kit is a good place to promote your work</div>
-              <div class="text-block spaced">
-                <p class="lead">
-                  Do you have an amazing package you want to submit?<br> Send-us an <a href="mailto:os@impactwave.com">email</a>
-                  with a link to your repository page.
-              </div>
-              <br>
-              <hr>
-              <br>
-              <h3>Criteria for package acceptance</h3><br> <br>
+              <h1>Contributing</h1>
               <div class="text-block">
-                <h6>To be included in PHP-Kit, a package:</h6>
+                <div class="spaced">
+                  <p>We're not accepting new packages, at this time.
+                  <p>You're still welcome to contribute in other ways, like:
+                </div>
                 <ul class="bulleted">
-                  <li>Must be framework agnostic;
-                  <li>Should not depend on packages external to PHP-Kit;
-                  <li>Must conform to PSR-4 for autoloading;
-                  <li>Must not require a PHP version < 5.4;
-                  <li>Adhere to <a href="http://semver.org" target="_blank">semantic versioning</a>.<br>Do not introduce
-                      backwards compatibility breaks.
-                  <li>Should be well documented;
-                  <li>Should be tested;
-                  <li>Should be actively maintained;
-                  <li>Must be licensed under the MIT, BSD or Apache licenses.
+                  <li>writing documentation;
+                  <li>submitting bug reports;
+                  <li>submitting pull requests for bug fixes or improvements;
+                  <li>writing automated tests;
+                  <li>providing constructive feedback.
                 </ul>
-                <hr>
-                <p><b>Note:</b> we are aware that, currently, our own packages do not meet all of these criteria.<br> We
-                                are very busy developing the open source Selenia framework and our own commercial
-                                projects, so please give us some time to improve these packages.
-                <p>Of course, if you'd like to help, you're welcome!
+                <div class="spaced">
+                  <p>All contributions should be submitted on GitHub.
+                  <p>You may also contact us at <a href="mailto:os@impactwave.com">os@impactwave.com</a>
+                </div>
               </div>
             </div>
           </div>
@@ -208,15 +212,10 @@
 
     <div class="footer-container">
 
-      <footer class="short bg-secondary-1">
+      <footer class="short alt2">
         <div class="container">
           <div class="row">
-            <div class="col-sm-12 text-center muted">
-              <!--<span class="sub">-->Copyright © 2015 Impactwave Lda<!--</span>--><!--<ul>-->
-              <!--<li><a href="#">Terms Of Use</a></li>-->
-              <!--<li><a href="#">Privacy &amp; Security Statement</a></li>--><!--<li><a href="#">Sitemap</a></li>-->
-              <!--</ul>-->
-            </div>
+            <div class="col-sm-12 text-center">Copyright © 2015 Impactwave Lda</div>
 
           </div>
         </div>

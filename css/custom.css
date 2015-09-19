@@ -1,14 +1,21 @@
 body, p {
-  font-size: 16px;
+  font-size: 20px;
+}
+
+a {
+  color: rgb(42, 89, 128);
+}
+
+a:hover {
+  color: rgb(66, 139, 202);
 }
 
 .projectlead span {
   font-size: 14px;
   padding: 3px 10px;
-  font-weight: bold;
-  background-color: #D7EDE4;
-  border: 1px solid #c7d9d0;
-  color: #8d9993;
+  background-color: #D7E4ED;
+  border: 1px solid #c7d0d9;
+  color: #5f6266;
   border-radius: 5px;
   margin-right: 5px;
 }
@@ -16,7 +23,7 @@ body, p {
 ul.bulleted {
   text-align: left;
   display: inline-block;
-  margin: 0 0 0 30px;
+  padding-left: 30px;
 }
 
 p + .bulleted {
@@ -24,8 +31,12 @@ p + .bulleted {
 
 .bulleted li {
   list-style-type: square;
-  list-style-position: outside;
   margin: 0 0 5px 0;
+}
+
+h1 {
+  text-transform: uppercase;
+  margin: 0 0 55px 0;
 }
 
 h1 + .sub {
@@ -49,14 +60,64 @@ header {
   margin: 30px 0;
 }
 
+.extra-spacing {
+  padding: 100px 0;
+}
+
+.spaced:first-child {
+  margin-top: 0;
+}
+
+.spaced:last-child {
+  margin-bottom: 0;
+}
+
 hr {
   border-color: #DDD;
 }
 
 section {
   padding: 60px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 
-h6 {
+h6, h5 {
   color: #777;
+}
+
+.alt0 {
+  background: #2c3e50 !important;
+  /*2a6496*/
+}
+.alt1 {
+  background: #2a6496 !important;
+  /*2a6496*/
+}
+.alt2 {
+  background: #7a2522 !important;
+  /*a5322e*/
+}
+.alt .intro, .alt h1, .alt h2, .alt p, .alt li {
+  color: #FFF !important;
+}
+
+.alt a {
+  color: #FFF;
+  font-weight: bold;
+}
+
+.bk-white {
+  background: #FFF !important;
+}
+
+.bk-1 {
+  background: #f2f9ff !important;
+}
+
+.bk-2 {
+  background: #f9f9f9 !important;
+}
+
+.bk-3 {
+  background: #EEE !important;
 }
