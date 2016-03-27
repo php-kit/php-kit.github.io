@@ -6,24 +6,17 @@
   <head>
     <meta charset="utf-8">
     <title>PHP-Kit</title>
-    <meta name="description" content="">
+    <meta name="description" content="PHP-Kit is a set of standalone Composer packages that work well together and can be used independently on any PHP project.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link href="css/flexslider.min.css" rel="stylesheet" type="text/css" media="all"/>
-    <link href="css/line-icons.min.css" rel="stylesheet" type="text/css" media="all"/>
-    <link href="css/elegant-icons.min.css" rel="stylesheet" type="text/css" media="all"/>
-    <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all"/>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
     <link href="css/theme-phpkit.css" rel="stylesheet" type="text/css" media="all"/>
     <link href="css/custom.css" rel="stylesheet" type="text/css" media="all"/>
     <!--[if gte IE 9]>
     <link rel="stylesheet" type="text/css" href="css/ie9.css"/>                <![endif]-->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700%7CRaleway:700'
-          rel='stylesheet'
-          type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700%7CRaleway:700' rel='stylesheet' type='text/css'>
     <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic" rel="stylesheet" type="text/css">
-    <link href="css/font-lato.css" rel="stylesheet" type="text/css">
   </head>
 
   <body id="home" data-spy="scroll" data-target=".nav-container" data-offset="51">
@@ -56,7 +49,7 @@
 
     <div class="main-container-disabled">
       <header class="fullscreen-element-disabled no-pad-disabled centered-text alt0">
-        <div class="background-image-holder parallax-background overlay-disabled" style="opacity:0.2">
+        <div class="background-image-holder overlay-disabled" style="opacity:0.2">
           <img class="background-image" alt="Background Image" src="img/code-wallpaper-2.jpg">
         </div>
 
@@ -87,9 +80,8 @@
                   <li>are framework agnostic;
                   <li>do not depend on packages external to PHP-Kit;
                   <li>conform to PSR-4 for autoloading;
-                  <li>are compatible with PHP versions >= 5.4;
-                  <li>adhere to <a href="http://semver.org" target="_blank">semantic versioning</a> and do not introduce
-                      backwards compatibility breaks;
+                  <li>most are compatible with PHP versions >= 5.4 (a few require 5.6);
+                  <li>adhere to <a href="http://semver.org" target="_blank">semantic versioning</a>;
                   <li>are well documented <i>(work in progress)</i>;
                   <li>are battle tested in real world projects <i>(sorry, no automated tests yet)</i>;
                   <li>are actively maintained;
@@ -147,6 +139,13 @@
               </div>
             </li>
             <li>
+              <div class="name"><a href="https://github.com/php-kit/html5-tools" target="_blank">html5-tools</a></div>
+              <div class="descrition">Parse, reformat and syntax highlight HTML5 markup</div>
+              <div class="projectlead">
+                <span>general</span>
+              </div>
+            </li>
+            <li>
               <div class="name"><a href="https://github.com/php-kit/power-primitives"
                                    target="_blank">power-primitives</a></div>
               <div class="descrition">PHP's arrays and strings as chainable, composable, object-oriented constructs
@@ -182,14 +181,13 @@
             <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
               <h1 class="text-center">PHP-Kit's history</h1>
               <div class="intro">
-                Some of PHP-Kit's packages began life as part of the <a href="http://selenia.io"
-                                                                        target="_blank">Selenia</a> framework.<br> All
-                packages that were not framework-dependant were later moved into a separate project, in order to make
-                them reusable outside of a framework context. <br>That's how PHP-Kit was born.<br>Now, its goal is to
-                provide a home to independent packages that are useful, not only to the <a href="http://selenia.io"
-                                                                                           target="_blank">Selenia</a>
-                framework ecosystem, but also to every PHP developer, on any project, irrespective of the chosen
-                framework (if any).
+                <p>Some of PHP-Kit's packages began life as part of the <a href="http://selenia.io" target="_blank">Selenia</a>
+                framework and some other projects at <a href="http://impactwave.com">Impactwave</a>.<br> 
+                All packages that were not framework-dependant were later moved into a separate project, in order to make
+                them reusable outside of a framework context.</p>
+                <p>That's how PHP-Kit was born.</p>
+                <p>Now, its goal is to provide a home to independent packages that are useful to every PHP developer, on any
+                project, irrespective of the chosen framework (if any).</p>
               </div>
             </div>
           </div>
@@ -204,7 +202,7 @@
               <div class="text-block">
                 <div class="spaced">
                   <p>We're not accepting new packages, at this time.
-                  <p>You're still welcome to contribute in other ways, like:
+                  <p>You're still welcome to contribute in other ways, such as:
                 </div>
                 <ul class="bulleted">
                   <li>writing documentation;
@@ -231,20 +229,14 @@
       <footer class="short alt2">
         <div class="container">
           <div class="row">
-            <div class="col-sm-12 text-center">Copyright © 2015 Impactwave Lda</div>
+            <div class="col-sm-12 text-center">Copyright © 2015 <a href="http://impactwave.com">Impactwave</a> Lda</div>
           </div>
         </div>
       </footer>
     </div>
 
     <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.plugin.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.flexslider-min.js"></script>
-    <!--<script src="js/smooth-scroll.min.js"></script>-->
-    <script src="js/skrollr.min.js"></script>
-    <!--<script src="js/scrollReveal.min.js"></script>--><!--<script src="js/isotope.min.js"></script>-->
-    <!--<script src="js/lightbox.min.js"></script>--><!--<script src="js/scripts.js"></script>-->
 
     <script>
       var isFirefox = typeof InstallTrigger !== 'undefined';
@@ -293,57 +285,6 @@
         });
 
         anim ();
-      }
-
-      /************** Parallax Scripts **************/
-
-      var isFirefox = typeof InstallTrigger !== 'undefined';
-      var isIE = /*@cc_on!@*/ false || !!document.documentMode;
-      var isChrome = !!window.chrome;
-      var isSafari = Object.prototype.toString.call (window.HTMLElement).indexOf ('Constructor') > 0;
-      var prefix;
-
-      if (isFirefox) {
-        prefix = '-moz-';
-      } else if (isIE) {
-
-      } else if (isChrome || isSafari) {
-        prefix = '-webkit-';
-      }
-      $ ('.parallax-background').each (function () {
-
-        if ($ (this).closest ('section').hasClass ('first-child') &&
-          !$ (this).closest ('section').hasClass ('slider-fullscreen')) {
-          $ (this).attr ('data-top', prefix + 'transform: translate3d(0px,0px, 0px)');
-          $ (this).attr ('data-top-bottom', prefix + 'transform: translate3d(0px,200px, 0px)');
-
-        } else {
-
-          $ (this).attr ('data-bottom-top', prefix + 'transform: translate3d(0px,-100px, 0px)');
-          $ (this).attr ('data-center', prefix + 'transform: translate3d(0px,0px, 0px)');
-          $ (this).attr ('data-top-bottom', prefix + 'transform: translate3d(0px,100px, 0px)');
-
-        }
-
-      });
-      if (!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test (navigator.userAgent || navigator.vendor ||
-          window.opera)) {
-        skrollr.init ({
-          forceHeight: false
-        });
-
-        // Multi Layer Parallax
-
-        $ ('.hover-background').each (function () {
-          $ (this).mousemove (function (event) {
-            $ (this).find ('.background-image-holder').css ('transform',
-              'translate(' + -event.pageX / 30 + 'px,' + -event.pageY / 45 + 'px)');
-            $ (this).find ('.layer-1').css ('transform',
-              'translate(' + -event.pageX / 50 + 'px,' + -event.pageY / 50 + 'px)');
-            $ (this).find ('.layer-2').css ('transform',
-              'translate(' + -event.pageX / 60 + 'px,' + -event.pageY / 60 + 'px)');
-          });
-        });
       }
     </script>
   </body>
